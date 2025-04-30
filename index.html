@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>EZ-Report</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+  <title>EZ-Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 
 <body>
-    <!-- Page Container -->
-    <div class="container">
-
-        <!-- Header with Logo and Title -->
-        <div class="header">
-            <img src="logo.png" alt="EZ-Report Logo" />
-            <div class="title">
-                <p><strong>EZ-Report</strong></p>
-            </div>
-        </div>
-
-        <!-- Info Section -->
-        <div class="info">
-            <p>
-                Hello, we are the EZ-Report coding team. Our mission for this website is to make it easier to report
-                small issues like potholes, unpaved streets, crossing sign malfunctions, and stop light errors, 
-                so they don't become larger issues. We want to make it so people in every city can easily and quickly
-                report problems and move on with their days. Using this web page (hopefully it'll eventually be an app)
-                is relatively simple. You just need to select the borough your issue is in and which city
-                official(s) you would like to report it to. This website will send your email
-                to the city Road Repair People within about 5-10 minutes.
-            </p>
-        </div>
-
-        <!-- Complaint Heading -->
-        <p class="complaint"><strong>Write Complaint</strong></p>
-
-        <!-- Email Form -->
-        <div class="emailer">
-            <form id="gform" method="POST" class="pure-form pure-form-stacked" 
-                data-email="themasterofbacon123@gmail.com"
-                action="https://script.google.com/macros/s/AKfycbxyJ4cZjrAiVem6RpoA4EpGLbuCYxxOr9tIrIaG43YwS4eMmYC9/exec">
-
-                <label for="name">Name:</label>
-                <input id="name" name="name" placeholder="First, Last" />
-
-                <label for="email">Your Email Address:</label>
-                <input id="email" name="email" type="email" required placeholder="your.name@email.com" />
-
-                <label for="Intersection">Location and Nearest Street:</label>
-                <input id="Intersection" name="Street 1, Street 2" placeholder="Street 1, Street 2, City, State, Zip" />
-
-                <label for="message">Complaint:</label>
-                <textarea id="message" name="message" rows="5" placeholder="What's the issue?"></textarea>
-
-                <button class="button-success pure-button button-xlarge" type="submit">
-                    <i class="fa fa-paper-plane"></i>&nbsp;Send
-                </button>
-            </form>
-        </div>
-
-        <!-- Thank You Message -->
-        <h2>Thanks for contacting us!</h2>
-
-        <!-- Footer -->
-        <footer>
-            <div class="footer">
-                <p>Made By: Ellis S. 2020</p>
-            </div>
-        </footer>
-
+  <!-- Title and Logo -->
+  <div class="header">
+    <img src="logo.png" alt="EZ-Report Logo" align="left" />
+    <div class="title">
+      <p><strong>EZ-Report</strong></p>
     </div>
+  </div>
+
+  <!-- Info about site -->
+  <div class="info">
+    <p>
+      Hello, we are the EZ-Report coding team. Our mission for this website is to make it easier to report
+      small issues like potholes, unpaved streets, crossing sign malfunctions, and stop light errors,
+      so they don't become larger issues. We want to make it so people in every city can easily and quickly
+      report problems and move on with their days. This site will send your complaint to the proper officials.
+    </p>
+  </div>
+
+  <!-- Write Complaint -->
+  <aside>
+    <p class="complaint">
+      <strong>Write Complaint</strong>
+    </p>
+  </aside>
+
+  <div class="emailer">
+    <form id="gform" method="POST" class="pure-form pure-form-stacked"
+      data-email="themasterofbacon123@gmail.com"
+      action="https://script.google.com/macros/s/AKfycbxyJ4cZjrAiVem6RpoA4EpGLbuCYxxOr9tIrIaG43YwS4eMmYC9/exec">
+
+      <div>
+        <label for="name"><br>Name:<br></label>
+        <input id="name" name="name" placeholder="First, Last" />
+      </div>
+
+      <div>
+        <label for="email"><br>Your Email Address:<br></label>
+        <input id="email" name="email" type="email" required placeholder="your.name@email.com" />
+      </div>
+
+      <div>
+        <label for="Intersection"><br>Location and Nearest Street:<br></label>
+        <input id="Intersection" name="Street 1, Street 2" placeholder="Street 1, Street 2, City, State, Zip" />
+      </div>
+
+      <div>
+        <label for="borough"><br>Select Borough / Neighborhood:<br></label>
+        <select id="borough" name="borough" required>
+          <optgroup label="New York City">
+            <option value="Bronx">Bronx</option>
+            <option value="Brooklyn">Brooklyn</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Queens">Queens</option>
+            <option value="Staten Island">Staten Island</option>
+          </optgroup>
+          <optgroup label="Pittsburgh, PA">
+            <option value="Downtown">Downtown</option>
+            <option value="Oakland">Oakland</option>
+            <option value="Squirrel Hill">Squirrel Hill</option>
+            <option value="Shadyside">Shadyside</option>
+            <option value="South Side">South Side</option>
+            <option value="North Side">North Side</option>
+            <option value="Bloomfield">Bloomfield</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label for="message"><br>Complaint:<br></label>
+        <textarea id="message" name="message" rows="5" placeholder="What's the issue?"></textarea>
+      </div>
+
+      <button id="submitB" class="button-success pure-button button-xlarge" type="submit">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send
+      </button>
+    </form>
+  </div>
+
+  <h2>Thanks for contacting us!</h2>
+
+  <footer>
+    <div class="footer">
+      <p>Made By: Ellis S. 2020</p>
+    </div>
+  </footer>
 </body>
 </html>
