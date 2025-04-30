@@ -1,40 +1,91 @@
-img{
-    width: 100px;
-    padding-left: 1px;
-    padding-top: -1% ;
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    padding-bottom: 17px;
+body {
+  background-color: #0d0d0d; /* Dark background */
+  color: white;              /* White text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 40px;
 }
 
-.title{
-    color: black;
-    text-emphasis: none;
-    font-size: 50px;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align:center;
+/* Header Title */
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.info{
-    border-radius: 20px;
-    padding: top 5px;
-    font-size: 22px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 60px;
-}
-.complaint{
-    font-size: 25px;
+/* Info Section */
+.info {
+  background-color: #1a1a1a;
+  color: #ddd;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-.emailer{
-    border-bottom: 50px;
-    border-top: 10px;
-    font-size: 25px;
+/* Complaint text */
+.complaint {
+  font-size: 22px;
+  color: #ccc;
+  margin-bottom: 20px;
 }
-.footer{
-    font-size: small;
-    text-align:center;
+
+/* Email section */
+.emailer {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 12px;
+  margin-top: 30px;
+  border: 1px solid #333;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 60px;
+}
+
+/* Buttons, Inputs, etc. if needed */
+input[type="text"], input[type="email"] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  background-color: #222;
+  color: #fff;
+}
+
+button {
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* Center layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
