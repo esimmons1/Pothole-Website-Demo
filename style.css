@@ -7,7 +7,7 @@
 
 body {
   background-color: #2b2b2b;  /* Dark gray background */
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif, Arial, Helvetica, sans-serif;
   color: #fff;  /* Light text for contrast */
   line-height: 1.6;
 }
@@ -27,6 +27,8 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  background-color: #1f1f1f; /* Darker header */
+  padding: 20px;
 }
 
 .header img {
@@ -55,8 +57,8 @@ body {
 
 /* Complaint Title */
 .complaint {
-  text-align: center;
   font-size: 24px;
+  text-align: center;
   margin-bottom: 15px;
   color: #fff;
 }
@@ -69,6 +71,12 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   margin-bottom: 40px;
   color: #fff;
+}
+
+.emailer label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .emailer input,
@@ -91,7 +99,7 @@ body {
 
 .emailer button {
   padding: 12px 24px;
-  background-color: #000;
+  background-color: #4caf50;
   color: white;
   font-size: 16px;
   border: none;
@@ -101,7 +109,7 @@ body {
 }
 
 .emailer button:hover {
-  background-color: #333;
+  background-color: #45a049;
 }
 
 /* Thanks message */
@@ -109,12 +117,15 @@ h2 {
   text-align: center;
   font-size: 22px;
   color: #ccc;
+  padding: 20px;
 }
 
 /* Footer */
 .footer {
+  background-color: #1f1f1f;
   text-align: center;
   font-size: 14px;
-  color: #aaa;
+  color: white;
   margin-top: 40px;
+  padding: 10px;
 }
