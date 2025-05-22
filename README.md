@@ -1,7 +1,8 @@
 Pothole-Website-Demo
 ====================
 
-By Ellis Simmons  
+Made by: Ellis Simmons - 2019 I think <br/>
+Languages: JavaScript, HTML, CSS
 
 What is this?
 -------------
