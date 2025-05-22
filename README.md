@@ -25,4 +25,4 @@ Initially a project for the Allstarcode camp that I participated in, made a coup
 
 ---
 
-As per usual, if you're going to steal or use it at least credit me please.
+As per usual, if you're going to steal or use it at least credit me please. Thank you for reading and have a nice day.
