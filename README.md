@@ -21,7 +21,7 @@ https://esimmons1.github.io/Pothole-Website-Demo/
 
 ## Why I Made It
 
-Just messing around with a useful idea that could grow into a real city reporting tool someday. For now, it’s more of a proof of concept.
+Initially a project for the Allstarcode camp that I participated in, made a couple changes now for practice while making my main website.
 
 ---
 
